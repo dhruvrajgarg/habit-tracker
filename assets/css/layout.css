@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding 0;  
+  text-align: center;
+  background-image: url(../images/background.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100%;
+  color: black;
+  min-height: 100vh;
+}
+.habit-list-container {
+  width: 50vw;
+  min-width: 400px;
+  display: flex;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+h1,
+.form-container {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: none;
+  background: white;
+}
+.habit-list-container {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.habit-name {
+  min-width: 80%;
+  text-align: left;
+  text-transform: capitalize;
+}
+ul {
+  padding-inline-start: 0px;
+}
+.habit-list {
+  min-width: 60%;
+  list-style: none;
+}
+.habit {
+  margin: 0.5rem;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+i {
+  color: black;
+}

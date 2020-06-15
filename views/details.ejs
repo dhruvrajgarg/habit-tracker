@@ -1,0 +1,21 @@
+<h1>
+    <%= name.habit  %>
+</h1>
+
+<div>
+	<ul>
+		<% for(let i=0;i<7;i++) { %>
+		<li>
+		<% if(a[i]==2) { %>
+			<a href="update/<%= name %>/<%= i %>/<%= a[i] %>"><img src="../images/undone.png"></a>
+		<% } %>
+		<% if(a[i]==0) { %>
+			<a href="update/<%= name %>/<%= i %>/<%= a[i] %>"><img src="../images/unknown.png"></a>
+		<% } %>
+		<% if(a[i]==1) { %>
+			<a href="update/<%= name %>/<%= i %>/<%= a[i] %>"><img src="../images/done.png"></a>
+		<% } %>
+		</li>
+		<% } %>
+	</ul>
+</div>

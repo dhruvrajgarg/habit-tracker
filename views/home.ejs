@@ -1,0 +1,33 @@
+<h1>
+  Habit Tracker
+</h1>
+
+<div class="from-container">
+  <form action="/create-habit" method="POST">
+    <input type="text" placeholder="Enter Habit" name="habit" />
+
+    <button type="submit">Add</button>
+  </form>
+</div>
+
+<div class="habit-list-container">
+  <ul class="habit-list">
+    <% for(let habit of habit_list){ %>
+    <li class="habit">
+      <div class="habit-name">
+        <p><%= habit.habit %></p>
+      </div>
+      <div class="more-info-button">
+        <a href="/details/?id=<%= habit._id%>">
+          <i class="fas fa-info-circle"></i>
+        </a>
+      </div>
+      <div class="delete-button">
+        <a href="/delete-habit/?id=<%=habit._id%>">
+          <i class="fas fa-trash"></i>
+        </a>
+      </div>
+    </li>
+    <% } %>
+  </ul>
+</div>
